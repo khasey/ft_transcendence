@@ -1,0 +1,75 @@
+.nav{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    background-color: #1f1f1f;
+}
+.nav_side{
+    z-index: 1;
+    width: 6vw;
+    height: 90vh;
+    border-radius: 20px;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(75, 75, 75, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(75, 75, 75, 0.3);
+}
+.logo_pong{
+    margin-top: 3vh;
+    max-width: 4vw;
+    cursor: pointer;
+}
+.nav_side_nav{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width: 15vw;
+    height: 80vh;
+    border-radius: 20px;
+    &_icon{
+        color: aliceblue;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    &_icon:hover{
+        color:rgb(122, 122, 122);
+        background: none;
+        
+    }
+    /* background-color: rgb(58, 58, 58); */
+}
+.login{
+    margin-top: 90%;
+    border-radius: 20px;
+    /* From https://css.glass */
+    background: rgba(233, 233, 233, 0);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.2px);
+    -webkit-backdrop-filter: blur(13.2px);
+    border: none;
+    font-size: 15px;
+    color: aliceblue;
+    width: 6vw;
+    height: 8vh;
+    font-family: Roboto, sans-serif;
+    cursor: auto;
+    cursor: pointer;
+    pointer-events: auto;
+    
+}
+.login:hover{
+    background-color: rgba(56, 56, 56, 0.253);
+}

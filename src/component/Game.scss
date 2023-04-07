@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    &_left{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 3%;
+        width: 60vw;
+        height: 80vh;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        &_score{
+            width: 100%;
+            height: 150px;
+            background-color: aquamarine;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+    &_right{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 20vw;
+        height: 80vh;
+        background-color: rgb(250, 252, 251);
+        border-radius: 20px;
+        margin-right: 3%;
+        &_chat{
+            width: 100%;
+            height: 150px;
+            background-color: aquamarine;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+}
