@@ -1,5 +1,6 @@
 import React from 'react'
 import './Game.scss'
+//import Pong from './Pong'
 
 function Game() {
   return (
@@ -7,8 +8,11 @@ function Game() {
       <div style={style.all_in}>
         <div className="container">
           <div className="container_left">
+              <div className="container_left_pong">
+                {/* <Pong/> */}
+              </div>
               <div className="container_left_score">
-
+                
               </div>
           </div>
           <div className="container_right">

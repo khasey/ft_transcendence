@@ -1,10 +1,48 @@
 import React from 'react'
+import './Login.scss'
 
 function Login() {
   return (
     <header style={style.all}>
         <div style={style.all_in}>
-            <span>login</span>
+          <div className="login_page">
+            <div className="login_page_box">
+              <div className="login_page_box_photo">
+                {/* <span className="login_page_box_photo_text">
+                Bienvenue sur notre site de jeu en ligne ! Avant de vous connecter, 
+                nous avons décidé de vous proposer une petite distraction : le célèbre jeu Pong. 
+                Pour ceux qui ne le connaissent pas encore, Pong est un jeu vidéo de tennis de table qui 
+                a été créé dans les années 70. Le principe est simple : deux joueurs s'affrontent en faisant 
+                rebondir une balle sur une raquette virtuelle, chacun devant renvoyer la balle vers le camp 
+                adverse sans la laisser sortir du terrain.
+                </span> */}
+                <img src="./images/background_login.jpg" alt="" className='login_page_box_photo_image'/>
+
+              </div>
+              <div className="login_page_box_id">
+                <div className="login_page_box_id_in">
+                  <div className="login_page_box_id_in_title">
+                    USER LOGIN
+                  </div>
+                  <div className="login_page_box_id_in_username">
+                    
+                  </div>
+                  <div className="login_page_box_id_in_password">
+
+                  </div>
+                  <div className='login_page_box_id_in_forgot'>
+                    <span className='login_page_box_id_in_forgot_text'>(icon) stay connected</span>
+                    <span className='login_page_box_id_in_forgot_text1'>forgot password?</span>
+                  </div>
+                  <div className='login_page_box_id_in_connexion'>
+                    <div className="login_page_box_id_in_connexion_title">
+                      <span>CONNEXION</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
         </div>
     </header>
   )

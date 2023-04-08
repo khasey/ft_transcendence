@@ -1,11 +1,16 @@
 import React from 'react'
+import './Credits.scss'
 
 function Credits() {
   
   return (
     <header style={style.all}>
         <div style={style.all_in}>
-            <span>credit</span>
+        <div className="credits">
+            <div className="credits_box">
+            
+            </div>
+           </div>
         </div>
     </header>
   )
