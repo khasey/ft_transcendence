@@ -1,5 +1,10 @@
 import React from 'react'
 import './Login.scss'
+import Checkbox from '@mui/material/Checkbox';
+import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
+import LockRoundedIcon from '@mui/icons-material/LockRounded';
+import TextField from '@mui/material/TextField';
+import ReactPlayer from "react-player";
 
 function Login() {
   return (
@@ -7,17 +12,33 @@ function Login() {
         <div style={style.all_in}>
           <div className="login_page">
             <div className="login_page_box">
+              
               <div className="login_page_box_photo">
-                {/* <span className="login_page_box_photo_text">
+              <div className="login_page_box_photo_ph">
+                
+              </div>
+               
+                {/* <img src="./images/background_login.jpg" alt="" className='login_page_box_photo_image'/> */}
+                <ReactPlayer
+                  className="login_page_box_photo_player"
+                  url="./images/FlexPong.mp4"
+                  playing={true}
+                  controls={true}
+                  loop={true}
+                  muted={true}
+                  playsinline={true}
+                  width={300}
+                  height={300}
+                />
+                 <span className="login_page_box_photo_text">
                 Bienvenue sur notre site de jeu en ligne ! Avant de vous connecter, 
                 nous avons décidé de vous proposer une petite distraction : le célèbre jeu Pong. 
                 Pour ceux qui ne le connaissent pas encore, Pong est un jeu vidéo de tennis de table qui 
                 a été créé dans les années 70. Le principe est simple : deux joueurs s'affrontent en faisant 
                 rebondir une balle sur une raquette virtuelle, chacun devant renvoyer la balle vers le camp 
                 adverse sans la laisser sortir du terrain.
-                </span> */}
-                <img src="./images/background_login.jpg" alt="" className='login_page_box_photo_image'/>
-
+                </span>
+                {/* <img src="./images/background_login.jpg" alt="" className='login_page_box_photo_image'/> */}
               </div>
               <div className="login_page_box_id">
                 <div className="login_page_box_id_in">
@@ -25,13 +46,18 @@ function Login() {
                     USER LOGIN
                   </div>
                   <div className="login_page_box_id_in_username">
-                    
+                    <PersonRoundedIcon className='login_page_box_id_in_username_icon'/>
+                    <TextField id="standard-basic"  variant="standard" style={{marginLeft:"5%", marginBottom:"1%"}} />
                   </div>
                   <div className="login_page_box_id_in_password">
-
+                    <LockRoundedIcon className='login_page_box_id_in_username_icon'/>
+                    <TextField id="standard-basic"  variant="standard" style={{marginLeft:"5%", marginBottom:"1%"}}/>
                   </div>
                   <div className='login_page_box_id_in_forgot'>
-                    <span className='login_page_box_id_in_forgot_text'>(icon) stay connected</span>
+                    <span className='login_page_box_id_in_forgot_text'>
+                       <Checkbox/>
+                       stay connected
+                       </span>
                     <span className='login_page_box_id_in_forgot_text1'>forgot password?</span>
                   </div>
                   <div className='login_page_box_id_in_connexion'>
