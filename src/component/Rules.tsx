@@ -49,7 +49,7 @@ const style: {
     height: '100vh',
   },
   all_in: {
-    width: '87vw',
+    width: '94vw',
     height: '90vh',
     borderRadius: '20px',
     background: 'rgba(75, 75, 75, 0.11)',
@@ -57,6 +57,6 @@ const style: {
     backdropFilter: 'blur(15px)',
     webkitBackdropFilter: 'blur(5px)',
     border: '1px solid rgba(75, 75, 75, 0.3)',
-    marginLeft: '150px',
+    marginLeft: '120px',
   }
 };

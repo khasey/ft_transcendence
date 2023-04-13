@@ -17,25 +17,25 @@ function Nav() {
   return (
     <div className="nav">
         <div className="nav_side">
-            <NavLink to='/game' onClick={() => navigate('game')} className="logo">
+            {/* <NavLink to='/login' onClick={() => navigate('game')} className="logo">
             <img src="./images/logo3.png" alt="" className="logo_pong" />
-            </NavLink>
+            </NavLink> */}
             <div className="nav_side_nav">
               <NavLink to='/game' className="nav_side_nav_icon">
-                  <VideogameAssetRoundedIcon onClick={() => navigate('game')} fontSize='large'/>
+                  <VideogameAssetRoundedIcon onClick={() => navigate('game')}/>
               </NavLink>
               <NavLink to='/score' className="nav_side_nav_icon">
-                  <ScoreboardRoundedIcon onClick={() => navigate('score')} fontSize='large'/>
+                  <ScoreboardRoundedIcon onClick={() => navigate('score')} />
               </NavLink>
               <NavLink to='/rules' className="nav_side_nav_icon">
-                  <GavelRoundedIcon onClick={() => navigate('rules')} fontSize='large'/>
+                  <GavelRoundedIcon onClick={() => navigate('rules')}/>
               </NavLink>
               <NavLink to='/credits' className="nav_side_nav_icon">
-                  <PermContactCalendarRoundedIcon onClick={() => navigate('credit')} fontSize='large'/>
+                  <PermContactCalendarRoundedIcon onClick={() => navigate('credit')} className="nav_side_nav_icon_credit"/>
               </NavLink>
-              <button  onClick={() => navigate('login')} className="login">
+              {/* <button  onClick={() => navigate('login')} className="login">
                 Login
-              </button>
+              </button> */}
             </div>
         </div>
     </div>
