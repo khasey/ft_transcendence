@@ -8,25 +8,21 @@ function Login() {
         <div style={style.all_in}>
           <div className="login_page">
             <div className="login_page_box">
-            
+            <video src="./images/video.mp4" className='login_page_box_video'></video>
               <div className="login_page_box_photo">
-              <button>LOGIN</button>
-              <div className="login_page_box_photo_ph">
-                
-              </div>
-               
+
                 {/* <img src="./images/login-back.png" alt="" className='login_page_box_photo_image'/> */}
-                <ReactPlayer
+                {/* <ReactPlayer
                   className="login_page_box_photo_player"
-                  url="./images/FlexPong.mp4"
+                  url="./images/video.mp4"
                   playing={true}
                   controls={false}
                   loop={true}
                   muted={true}
                   playsinline={true}
-                  width={1700}
+                  width={1000}
                   height={1000}
-                />
+                /> */}
                  {/* <span className="login_page_box_photo_text">
                 Bienvenue sur notre site de jeu en ligne ! Avant de vous connecter, 
                 nous avons décidé de vous proposer une petite distraction : le célèbre jeu Pong. 
@@ -82,7 +78,7 @@ const style: {
       backdropFilter: 'blur(15px)',
       webkitBackdropFilter: 'blur(5px)',
       border: '1px solid rgba(75, 75, 75, 0.3)',
-      marginLeft: '120px',
+      marginLeft: '5%',
     }
   };
   

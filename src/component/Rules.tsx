@@ -57,6 +57,6 @@ const style: {
     backdropFilter: 'blur(15px)',
     webkitBackdropFilter: 'blur(5px)',
     border: '1px solid rgba(75, 75, 75, 0.3)',
-    marginLeft: '120px',
+    marginLeft: '5%',
   }
 };
